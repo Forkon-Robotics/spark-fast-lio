@@ -6,6 +6,7 @@ set(CMAKE_CXX_FLAGS_RELEASE "-O3 -g -pthread")
 set(CMAKE_CXX_FLAGS "-O3")
 
 add_definitions(-DROOT_DIR=\"${CMAKE_CURRENT_SOURCE_DIR}/\")
+add_definitions(-DBOOST_BIND_GLOBAL_PLACEHOLDERS)
 
 set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -fexceptions" )
 set(CMAKE_CXX_STANDARD 17)
