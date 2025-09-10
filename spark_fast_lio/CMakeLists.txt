@@ -2,8 +2,8 @@ cmake_minimum_required(VERSION 3.20)
 project(spark_fast_lio)
 
 set(CMAKE_BUILD_TYPE "Release")
-set(CMAKE_CXX_FLAGS_RELEASE "-O2 -g -pthread")
-set(CMAKE_CXX_FLAGS "-O2")
+set(CMAKE_CXX_FLAGS_RELEASE "-O3 -g -pthread")
+set(CMAKE_CXX_FLAGS "-O3")
 
 add_definitions(-DROOT_DIR=\"${CMAKE_CURRENT_SOURCE_DIR}/\")
 add_definitions(-DBOOST_BIND_GLOBAL_PLACEHOLDERS)
